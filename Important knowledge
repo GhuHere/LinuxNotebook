@@ -25,6 +25,16 @@ r(读/4)、w(写/2)、x(执行/1)三种。
 17.绝对路径从根目录/开始，否则就是相对路径。
 18.root不受权限限制，任何文件都可读写。
 19.根目录/所在分区越小越好。
+20.压缩文件的扩展名大多是：.gz,.bz2,.xz,.tar,.tar.gz,.tar.bz2,.tar.xz。
+21.常见的压缩命令有gzip,bzip2,xz，压缩率最佳的是xz。
+22.tar可以用来进行文件打包，并可支持gzip,bzip2,xz的压缩。
+23.压缩：tar -Jcv -f filename.tar.xz 要被压缩的文件或目录名称。
+24.查询：tar -Jtv -f filename.tar.xz。
+25.解压缩：tar -Jxv -f filename.tar.xz -C 要解压缩的目录。
+26.xfsdump命令可备份文件系统或单一目录；xfsrestore命令还原备份文件。
+27.mkisofs命令来创建光盘刻录文件；wodim写入CD刻录机。
+28.dd可备份完整的硬盘或硬盘分区，因为dd可读取磁盘的扇区表面数据。
+29.cpio为相当优秀的备份命令，不过必须要搭配类似find命令来读入要备份的数据，方可进行备份操作。
   
 
 
